@@ -1,0 +1,37 @@
+.holder{
+    border: 7px solid black;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    height: 50px;
+    /* width: 100px; */
+}
+.item:nth-child(1){
+    background-color: red;
+    order: -2;
+    flex-grow: 2;
+}
+.item:nth-child(2){
+    background-color: blue;
+    order: 1;
+    flex-shrink: 2;
+}
+.item:nth-child(3){
+    background-color: violet;
+    flex-shrink: 2;
+}
+.item:nth-child(4){
+    background-color: green;
+    order: 2;
+    flex-shrink: 2;
+}
+.item:nth-child(5){
+    background-color: yellow;
+    order: -1;
+    flex-grow: 2;
+}
